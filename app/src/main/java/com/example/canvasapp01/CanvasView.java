@@ -35,6 +35,12 @@ public class CanvasView extends View {
         paint.setStyle(Paint.Style.FILL);
         canvas.drawRect(200, 100, 300, 700, paint);
 
+        // 線を描く
+        paint.setColor(Color.GREEN);
+        paint.setStrokeWidth(40);
+        paint.setStrokeCap(Paint.Cap.ROUND);
+        canvas.drawLine(20, 20, sx - 20, sy - 20, paint);
+
     }
 
 }
